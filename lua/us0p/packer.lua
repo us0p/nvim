@@ -9,7 +9,6 @@ return require('packer').startup(function(use)
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use { "catppuccin/nvim", as = "catppuccin" }
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use ('theprimeagen/harpoon')
   use ('sbdchd/neoformat')
@@ -45,5 +44,13 @@ return require('packer').startup(function(use)
           }
       end
   }
+  use {
+      "akinsho/toggleterm.nvim", 
+      tag = '*', 
+      config = function()
+          require("toggleterm").setup()
+      end
+  }
+ use { "ellisonleao/gruvbox.nvim" } 
 end)
 
