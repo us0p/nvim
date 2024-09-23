@@ -3,7 +3,7 @@ return {
 	opts = {
 		events = { "BufWritePost", "BufReadPost", "InsertLeave" },
 		linters_by_ft = {
-			python = { "pylint" },
+			python = { "flake8" },
 			c = { "cpplint" },
 			javascript = { "eslint_d" },
 			typescript = { "eslint_d" },

@@ -12,3 +12,7 @@ the lsp provider is
 # Dependencies
 - [ripgrep](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation): search tool, telescope dependency.
 - [NerdFonts](https://github.com/ryanoasis/nerd-fonts): Patched fonts, (shallow copy the repository and run install script).
+
+# Todo
+- config formatters to break lines longer than 75 characters.
+- config pylint, keep asking to add docstring to functions and modules and complaning about imports.

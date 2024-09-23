@@ -66,7 +66,8 @@ return {
 				"shfmt",
 				"clang-format",
 				-- linters
-				"pylint",
+				--"pylint",
+				"flake8",
 				"cpplint",
 				"eslint_d",
 			},
