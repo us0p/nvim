@@ -2,6 +2,11 @@ return {
 	"ThePrimeagen/harpoon",
 	branch = "harpoon2",
 	dependencies = { "nvim-lua/plenary.nvim" },
+	opts = {
+		settings = {
+			save_on_toggle = true,
+		},
+	},
 	keys = function()
 		local harpoon = require("harpoon")
 
@@ -31,7 +36,7 @@ return {
 				end,
 			},
 			{
-				"<C-n",
+				"<C-n>",
 				function()
 					harpoon:list():select(3)
 				end,
@@ -44,7 +49,4 @@ return {
 			},
 		}
 	end,
-	settings = {
-		save_on_toggle = true,
-	},
 }

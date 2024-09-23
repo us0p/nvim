@@ -14,3 +14,6 @@ vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
 vim.opt.scrolloff = 8
+
+-- netrw
+vim.g.netrw_banner = 0

@@ -55,6 +55,23 @@ return {
 			},
 		},
 	},
+	{
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
+		opts = {
+			ensure_installed = {
+				-- formatters
+				"black",
+				"prettierd",
+				"stylua",
+				"shfmt",
+				"clang-format",
+				-- linters
+				"pylint",
+				"cpplint",
+				"eslint_d",
+			},
+		},
+	},
 	{ "neovim/nvim-lspconfig" },
 	{ "hrsh7th/cmp-nvim-lsp" },
 	{
