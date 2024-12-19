@@ -12,6 +12,9 @@ the lsp provider is
 # Dependencies
 - [ripgrep](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation): search tool, telescope dependency.
 - [NerdFonts](https://github.com/ryanoasis/nerd-fonts): Patched fonts, (shallow copy the repository and run install script).
+- [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating): install npm and node.
+- [cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html): some packages are written in rust.
+- unzip package, it's provided by your distribution package manager.
 
 # Todo
 - config formatters to break lines longer than 75 characters.
