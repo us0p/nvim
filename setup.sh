@@ -54,3 +54,6 @@ pyenv global "$latest_python"
 
 # installing nvim-treesitter dependency
 cargo install --locked tree-sitter-cli
+
+# Loads all into the out shell
+exec "$SHELL"
