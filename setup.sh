@@ -39,5 +39,11 @@ nvm install --lts
 nvm alias default lts/*
 
 # install latest stable python
-pyenv install --latest
-pyenv global "$(pyenv latest)"
+latest_python="$(
+  pyenv install --list |
+    sed 's/^[[:space:]]*//' |
+    grep -E '^3\.[0-9]+\.[0-9]+$' |
+    tail -1
+)"
+pyenv install -s "$latest_python"
+pyenv global "$latest_python"
