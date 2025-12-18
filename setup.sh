@@ -26,7 +26,7 @@ echo 'eval "$(pyenv init - zsh)"' >>~/.zshrc
 curl https://sh.rustup.rs -sSf | sh
 
 # Refresh shell
-exec "$SHELL"
+# exec "$SHELL"
 
 # install latest node version and set's it as default
 nvm install --lts
