@@ -34,6 +34,9 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)" 2>/dev/null || true
 
+# Load Cargo into PATH
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # install latest node version and set's it as default
 nvm install --lts
 nvm alias default lts/*
