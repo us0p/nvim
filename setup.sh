@@ -7,6 +7,7 @@ cd "$HOME/packages"
 sudo pacman -Sy \
   unzip \
   ripgrep \
+  clang \
   go
 
 export PROFILE="$HOME/.zshrc"
