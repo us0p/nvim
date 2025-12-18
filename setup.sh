@@ -47,3 +47,6 @@ latest_python="$(
 )"
 pyenv install -s "$latest_python"
 pyenv global "$latest_python"
+
+# installing nvim-treesitter dependency
+cargo install --locked tree-sitter-cli
