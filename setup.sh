@@ -25,8 +25,12 @@ echo 'eval "$(pyenv init - zsh)"' >>~/.zshrc
 # Install Cargo
 curl https://sh.rustup.rs -sSf | sh
 
-# Refresh shell
-# exec "$SHELL"
+# Load nvm into the shell
+[ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh"
+
+# Loading pyenv into the shell
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)" 2>/dev/null || true
 
 # install latest node version and set's it as default
 nvm install --lts
