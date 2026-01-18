@@ -13,3 +13,12 @@ vim.keymap.set("n", "<C-u", "<C-u>zz")
 
 -- stores selected text to clipboard;
 vim.keymap.set("v", "<leader>y", [["+y]])
+
+-- disable Copilot's default <Tab> mapping
+vim.g.copilot_no_tab_map = true
+vim.keymap.set(
+    "i",
+    "<S-Tab>",
+    'copilot#Accept("\\<S-Tab>")',
+    { expr = true, replace_keycodes = false }
+)

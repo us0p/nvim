@@ -9,6 +9,9 @@ if you need some plugins, you can look at a list available at the pre-mounted pr
 the lsp provider is  
 [lsp-zero.nvim](https://lsp-zero.netlify.app/docs/introduction.html)
 
+Using the following community package for GitHub Copilot Chat
+[CopilotChat.nvim](https://github.com/CopilotC-Nvim/CopilotChat.nvim)
+
 # Dependencies
 Because of inconsistencies accross pakage manger accross linux distros, prefer to build neovim from source.
 
@@ -19,6 +22,8 @@ Because of inconsistencies accross pakage manger accross linux distros, prefer t
 - [go](https://go.dev/dl/)
 - [pip](https://pip.pypa.io/en/stable/installation/): In debian, it can be installed with `sudo apt install python3-pip`.
 - unzip package, it's provided by your distribution package manager.
+- [tiktoke_core](https://github.com/gptlang/lua-tiktoken): Accurate token counting, for archlinux install `luajit-tiktoken-bin` from AUR.
+- [lynx](https://github.com/gptlang/lua-tiktoken): For improved URL context features.
 
 
 ### Debian - dependencies
