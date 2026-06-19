@@ -70,6 +70,7 @@ return {
                 "flake8",
                 "cpplint",
                 "eslint_d",
+                "golangci-lint",
             },
         },
     },

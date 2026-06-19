@@ -7,6 +7,7 @@ return {
             c = { "cpplint" },
             javascript = { "eslint_d" },
             typescript = { "eslint_d" },
+            go = { "golangci-lint" },
         },
     },
     config = function(_, opts)
